@@ -25,7 +25,7 @@ After the build is done you can use the image right away using the following com
 
 [source,bash]
 ----
-docker run -it --rm -v <local folder>:/openjdk <image id>
+docker run -it --rm -v _local-folder_:/openjdk _image-id_
 ----
 
 == Contribute
