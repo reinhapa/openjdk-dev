@@ -5,3 +5,6 @@ services:
 
 before_install:
   - docker build -t reinhapa/openjdk-dev .
+
+script:
+  - bundle exec
