@@ -5,6 +5,8 @@ services:
 
 before_install:
   - docker build -t reinhapa/openjdk-dev .
+  - docker run -d reinhapa/openjdk-dev
+  - docker ps -a
 
 script:
-  - bundle exec
+  - bundle exec rake test
