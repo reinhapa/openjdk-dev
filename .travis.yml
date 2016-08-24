@@ -3,10 +3,5 @@ sudo: required
 services:
   - docker
 
-before_install:
-  - docker build -t reinhapa/openjdk-dev .
-  - docker run -d reinhapa/openjdk-dev
-  - docker ps -a
-
 script:
-  - bundle exec rake test
+  - docker build -t reinhapa/openjdk-dev .
