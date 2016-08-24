@@ -13,14 +13,21 @@ In order to build the initial docker image use the following command:
 
 [source,bash]
 ----
-docker build .
+docker build -t openjdk-dev .
 ----
 
 After the build is done you can use the image right away using the following command:
 
 [source,bash]
 ----
-docker run -it --rm -v <local-folder>:/openjdk <image-id>
+docker run -it --name openjdk-dev -v <local_folder>:/openjdk openjdk-dev
+----
+
+When once exited the container you can restart it as follows:
+
+[source,bash]
+----
+docker start -i openjdk-dev
 ----
 
 == Contribute
