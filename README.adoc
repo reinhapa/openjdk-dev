@@ -5,6 +5,7 @@ Patrick Reinhart <https://github.com/reinhapa[@reinhapa]>
 
 image:https://img.shields.io/badge/license-MIT-blue.svg["MIT License", link="https://github.com/{project-full-path}/blob/{github-branch}/LICENSE"]
 image:https://img.shields.io/travis/{project-full-path}/{github-branch}.svg["Build Status", link="https://travis-ci.org/{project-full-path}"]
+image:https://img.shields.io/docker/pulls/{project-full-path}.svg?maxAge=2592000["Docker Pulls"], link="https://hub.docker.com/r/{project-full-path}/"]
 
 This project contains a Dockerfile to set up a docker image for a developer.
 
