@@ -15,14 +15,14 @@ In order to build the initial docker image use the following command:
 
 [source,bash]
 ----
-docker build -t openjdk-dev .
+docker build -t reinhapa/openjdk-dev .
 ----
 
 After the build is done you can use the image right away using the following command:
 
 [source,bash]
 ----
-docker run -it --name openjdk-dev -v <local_folder>:/openjdk openjdk-dev
+docker run -it --name openjdk-dev -v <local_folder>:/openjdk reinhapa/openjdk-dev
 ----
 
 When once exited the container you can restart it as follows:
