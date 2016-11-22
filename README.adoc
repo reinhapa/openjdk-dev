@@ -25,6 +25,13 @@ After the build is done you can use the image right away using the following com
 docker run -it --name openjdk-dev -v <local_folder>:/openjdk reinhapa/openjdk-dev
 ----
 
+If you expirence access problems due to SELinux you must flag your data directory using the following command:
+
+[source,bash]
+----
+chcon -Rt svirt_sandbox_file_t <local_folder>
+----
+
 When once exited the container you can restart it as follows:
 
 [source,bash]
