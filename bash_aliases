@@ -1,0 +1,1 @@
+alias jtreg='jtreg -w:/openjdk/JTwork -r:/openjdk/JTreport'
