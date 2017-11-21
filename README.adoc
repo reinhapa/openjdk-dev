@@ -15,14 +15,14 @@ In order to build the initial docker image use the following command:
 
 [source,bash]
 ----
-docker build -t reinhapa/openjdk-dev .
+docker build -t docker.io/reinhapa/openjdk-dev .
 ----
 
 After the build is done you can use the image right away using the following command:
 
 [source,bash]
 ----
-docker run -it --name openjdk-dev -v <local_folder>:/openjdk reinhapa/openjdk-dev
+docker run -it --name openjdk-dev -v <local_folder>:/openjdk docker.io/reinhapa/openjdk-dev
 ----
 
 If you expirence access problems due to SELinux you must flag your data directory using the following command:
