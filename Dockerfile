@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk9:x86_64-ubuntu-jdk-9.181
+FROM adoptopenjdk/openjdk11
 MAINTAINER Patrick Reinhart <patrick@reini.net>
 RUN apt-get update && apt-get install -y --no-install-recommends ksh mercurial nano && apt-get build-dep -y openjdk-9
 RUN curl https://adopt-openjdk.ci.cloudbees.com/job/jtreg/lastSuccessfulBuild/artifact/jtreg-4.2.0-tip.tar.gz | tar -xvz -C /opt
